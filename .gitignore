@@ -16,3 +16,5 @@ submission.zip
 
 # Runtime logs can be regenerated.
 outputs/run.log
+outputs/preview_*.png
+tmp_new_scene/

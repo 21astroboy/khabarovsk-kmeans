@@ -24,11 +24,11 @@ PROCESSED = ROOT / "data" / "processed"
 OUTPUTS = ROOT / "outputs"
 ASSETS = ROOT / "assets"
 
-SCENE_ID = "LC09_L2SP_113026_20240917_20240918_02_T1"
+SCENE_ID = "LC08_L2SP_113026_20250710_20250715_02_T1"
 KHABAROVSK_LON = 135.0719
 KHABAROVSK_LAT = 48.4802
-CLIP_SIZE_M = 120_000
-N_CLUSTERS = 6
+CLIP_SIZE_M = 80_000
+N_CLUSTERS = 5
 RANDOM_STATE = 42
 TRAIN_SAMPLE = 250_000
 SILHOUETTE_SAMPLE = 50_000
@@ -331,7 +331,7 @@ def plot_outputs(stack: np.ndarray, valid: np.ndarray, classified: np.ndarray, p
 
     fig, ax = plt.subplots(figsize=(9, 11), dpi=180)
     ax.imshow(display, cmap=ListedColormap(colors), vmin=0, vmax=N_CLUSTERS - 1, extent=extent)
-    ax.set_title("Автоматическая классификация K-means (k=6): Хабаровск и окрестности", fontsize=12)
+    ax.set_title(f"Автоматическая классификация K-means (k={N_CLUSTERS}): Хабаровск и окрестности", fontsize=12)
     add_geo_grid(ax, extent, profile["crs"])
     add_scale_bar(ax, extent)
     add_north_arrow(ax, extent)

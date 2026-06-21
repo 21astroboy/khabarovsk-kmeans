@@ -1,0 +1,6 @@
+rasterio
+scikit-learn
+matplotlib
+python-docx
+pillow
+pyproj

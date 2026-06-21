@@ -1,0 +1,18 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# Raw Landsat archives and extracted source bands are too large for GitHub.
+data/raw/
+data/processed/khabarovsk_landsat_stack_B2_B7.tif
+
+# Microsoft Word lock files.
+~$*.docx
+
+# Local handoff bundle; contents are represented by tracked project files.
+submission/
+submission.zip
+
+# Runtime logs can be regenerated.
+outputs/run.log

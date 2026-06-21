@@ -1,0 +1,114 @@
+{
+  "scene_id": "LC09_L2SP_113026_20240917_20240918_02_T1",
+  "stack_path": "/Users/kirill/Documents/Homework/landsat-khabarovsk/data/processed/khabarovsk_landsat_stack_B2_B7.tif",
+  "classified_path": "/Users/kirill/Documents/Homework/landsat-khabarovsk/data/processed/khabarovsk_kmeans_classified.tif",
+  "metadata": {
+    "spacecraft": "LANDSAT_9",
+    "sensor": "OLI_TIRS",
+    "date_acquired": "2024-09-17",
+    "path": "113",
+    "row": "26",
+    "cloud_cover": "0.75",
+    "processing_level": "L1TP",
+    "product_id": "LC09_L1TP_113026_20240917_20240917_02_T1",
+    "utm_zone": "53",
+    "datum": "WGS84",
+    "crs": "EPSG:32653",
+    "clip_size_m": 120000
+  },
+  "kmeans": {
+    "n_clusters": 6,
+    "random_state": 42,
+    "train_sample": 250000,
+    "metrics": [
+      {
+        "k": 5,
+        "wcss": 405305.0625,
+        "silhouette": 0.35450446605682373
+      },
+      {
+        "k": 6,
+        "wcss": 337928.75,
+        "silhouette": 0.36922311782836914
+      },
+      {
+        "k": 7,
+        "wcss": 300668.1875,
+        "silhouette": 0.3289351165294647
+      },
+      {
+        "k": 8,
+        "wcss": 269313.8125,
+        "silhouette": 0.313198983669281
+      }
+    ]
+  },
+  "area_table": [
+    {
+      "cluster": 0,
+      "color": "#F28E2B",
+      "name": "Промышленные зоны, дороги и открытый грунт",
+      "pixels": 2116936,
+      "area_km2": 1905.24,
+      "share_percent": 14.49,
+      "ndvi": "0.576",
+      "mndwi": "-0.590",
+      "ndbi": "-0.022"
+    },
+    {
+      "cluster": 1,
+      "color": "#1B7837",
+      "name": "Плотная древесная растительность",
+      "pixels": 4308513,
+      "area_km2": 3877.66,
+      "share_percent": 29.5,
+      "ndvi": "0.794",
+      "mndwi": "-0.588",
+      "ndbi": "-0.260"
+    },
+    {
+      "cluster": 2,
+      "color": "#7FBF3F",
+      "name": "Разреженная растительность и сельхозугодья",
+      "pixels": 6324728,
+      "area_km2": 5692.26,
+      "share_percent": 43.31,
+      "ndvi": "0.691",
+      "mndwi": "-0.584",
+      "ndbi": "-0.162"
+    },
+    {
+      "cluster": 3,
+      "color": "#F4A3B5",
+      "name": "Городская застройка",
+      "pixels": 408459,
+      "area_km2": 367.61,
+      "share_percent": 2.8,
+      "ndvi": "0.428",
+      "mndwi": "-0.527",
+      "ndbi": "0.052"
+    },
+    {
+      "cluster": 4,
+      "color": "#2166AC",
+      "name": "Водные объекты",
+      "pixels": 664360,
+      "area_km2": 597.92,
+      "share_percent": 4.55,
+      "ndvi": "-0.313",
+      "mndwi": "0.520",
+      "ndbi": "-0.303"
+    },
+    {
+      "cluster": 5,
+      "color": "#B59F3B",
+      "name": "Смешанные открытые территории",
+      "pixels": 781908,
+      "area_km2": 703.72,
+      "share_percent": 5.35,
+      "ndvi": "0.214",
+      "mndwi": "-0.078",
+      "ndbi": "-0.174"
+    }
+  ]
+}
